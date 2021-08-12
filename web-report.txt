@@ -1,0 +1,62 @@
+It is a long lasting dream in nuclear physics to study nuclei like,
+for instance, carbon directly from Quantum Chromodynamics (QCD), the
+underlying fundamental theory of strong interactions. Such an endeavor
+is very challenging both, methodically and numerically. Towards this
+goal physicists from the European Twisted Mass Collaboration and in
+particular the University of Bonn have started to investigate two
+hadron systems using the approach of Lattice QCD. 
+
+It is a long lasting dream in nuclear physics to study nuclei like,
+for instance, carbon directly from Quantum Chromodynamics (QCD), the
+underlying fundamental theory of strong interactions. Such a
+theoretical investigation from first principles is difficult for
+several reasons: first, QCD describes a strong interaction which
+cannot be solved approximately. Therefore, lattice QCD as a
+non-perturbative method is required, for which the space-time is
+discretised with finite lattice spacing. Second, the degrees of
+freedom in QCD are so-called quarks and gluons, while nuclei can be
+described reasonably well as bound states of protons and
+neutrons. Protons and neutrons consist of three quarks each. The
+computational complexity in lattice QCD is proportional to the
+factorial of the number of involved quarks. Thus, a nucleus with more
+than five protons and neutrons, i.e. more than 15 quarks represents a
+major challenge. This challenge requires the usage of most modern
+supercomputer resources available for instance at the Jülich
+Supercomputing Centre (JSC) or the High Performance Computing Center
+Stuttgart (HLRS). Third, bound states like nuclei can be studied in
+lattice QCD only indirectly. This indirect approach is named Lüscher
+method and can be understood as follows: imaging two, for simplicity
+fully equal particles in a box with finite edge length L. If the edge
+length L is much larger than the typical interaction range of the two
+particles one expects little interaction between the two
+particles. Any measurement of the two particle system will, hence,
+yield twice what one measures for a single particle. As soon as L
+becomes close to the interaction range one expects, however,
+modifications. And these modifications are directly related to the
+interaction properties of the two particles. 
+
+In order to tackle this challenge, scientists of the Rheinische
+Friedrich-Wilhelms-Universität Bonn together with scientists from
+Peking University are investigating various two meson  
+and meson-baryon systems. With the resources provided to us by the
+computer centres in Jülich and Stuttgart we were able to study two
+pion systems with various isospins, pion-kaon, kaon-kaon and the
+pion-nucleon meson baryon system. 
+
+The animation shows how the phase shift &delta;<sub>1</sub> of the
+&rho;-meson, calculated with the supercomputer resources available to us,
+changes with the pion mass: from almost a stable particle at pion mass
+of 450 MeV down to the physical pion mass value of 135 MeV, where one
+can compare directly to the experimental result [2] shown as red circles.
+
+
+figure caption: We show the &rho;-meson phase shift
+&delta;<sub>1</sub> as a function of the center of mass energy. The
+red circles represent the experimental 
+results [2], the solid line our lattice calculation [1]. The animation
+visualises the approach of the physical point where the pion mass
+assumes a value of 135 MeV. 
+
+
+[1] M. Werner et al., accepted for publication in EPJA, <a href="http://arxiv.org/abs/arXiv:1907.01237">arXiv:1907.01237</a>
+[2] S. D. Protopopescu et al. , Phys. Rev. D7 , 1279 (1973)
