@@ -1,0 +1,131 @@
+Project ID: chbn28
+Project Name: Hadron Scattering and Resonance Properties from Lattice QCD
+
+Principle investigator: Carsten Urbach, Helmholtz-Institut für
+Strahlen- und Kernphysik (Theorie) and Bethe Center for Theoretical
+Physics, Universität Bonn, 53115 Bonn, Germany
+
+
+Team:
+C. Alexandrou, Department of Physics, University of Cyprus, P.O. Box, 20537, 1678
+Nicosia, Cyprus and Computation-based Science and Technology Research Center, The
+Cyprus Institute, 20 Kavafi Str., Nicosia 2121, Cyprus
+
+R. Frezzotti, Dip. di Fisica, Università di Roma Tor Vergata and INFN, Sez. di Roma
+Tor Vergata, Via della Ricerca Scientifica, I-00133 Roma, Italy
+
+C. Helmes, Helmholtz-Institut für Strahlen- und Kernphysik (Theorie) and
+Bethe Center for Theoretical Physics, Universität Bonn, 53115 Bonn,
+Germany
+
+K. Jansen, NIC, DESY, Platanenallee 6, 15738 Zeuthen, Germany
+
+B. Kostrzewa, Helmholtz-Institut für Strahlen- und Kernphysik (Theorie) and
+Bethe Center for Theoretical Physics, Universität Bonn, 53115 Bonn,
+Germany
+
+M. Petschlies, Helmholtz-Institut für Strahlen- und Kernphysik (Theorie) and
+Bethe Center for Theoretical Physics, Universität Bonn, 53115 Bonn,
+Germany
+
+F. Pittler, Helmholtz-Institut für Strahlen- und Kernphysik (Theorie) and
+Bethe Center for Theoretical Physics, Universität Bonn, 53115 Bonn,
+Germany
+
+M. Ueding, Helmholtz-Institut für Strahlen- und Kernphysik (Theorie) and
+Bethe Center for Theoretical Physics, Universität Bonn, 53115 Bonn,
+Germany
+
+U. Wenger, Institute for Theoretical Physics, University of Bern, Sidlerstrasse 5, CH-
+3012 Bern, Switzerland
+
+M. Werner, Helmholtz-Institut für Strahlen- und Kernphysik (Theorie) and
+Bethe Center for Theoretical Physics, Universität Bonn, 53115 Bonn, Germany
+
+Abstact:
+It is a long lasting dream in nuclear physics to study nuclei like,
+for instance, carbon directly from Quantum Chromodynamics (QCD), the
+underlying fundamental theory of strong interactions. Such an endeavor
+is very challenging both, methodically and numerically. Towards this
+goal physicists from the European Twisted Mass Collaboration and in
+particular the University of Bonn have investigated two- and
+three-hadron systems using the approach of Lattice QCD.
+
+Report:
+It is a long lasting dream in nuclear physics to study nuclei like,
+for instance, carbon directly from Quantum Chromodynamics (QCD), the
+underlying fundamental theory of strong interactions. Such a
+theoretical investigation from first principles is difficult for
+several reasons: first, QCD describes a strong interaction which
+cannot be solved approximately. Therefore, lattice QCD as a
+non-perturbative method is required, for which the space-time is
+discretised with finite lattice spacing. Second, the degrees of
+freedom in QCD are so-called quarks and gluons, while nuclei can be
+described reasonably well as bound states of protons and
+neutrons. Protons and neutrons consist of three quarks each. The
+computational complexity in lattice QCD is proportional to the
+factorial of the number of involved quarks. Thus, a nucleus with more
+than five protons and neutrons, i.e. more than 15 quarks represents a
+major challenge. This challenge requires the usage of most modern
+supercomputer resources available for instance at the Jülich
+Supercomputing Centre (JSC). Third, bound states like nuclei can be
+studied in lattice QCD only indirectly. This indirect approach is named Lüscher
+method and can be understood as follows: imaging two, for simplicity
+fully equal particles in a box with finite edge length L. If the edge
+length L is much larger than the typical interaction range of the two
+particles one expects little interaction between the two
+particles. Any measurement of the two particle system will, hence,
+yield twice what one measures for a single particle. As soon as L
+becomes close to the interaction range, i.e. the particles feel each
+other, one expects small modifications compared to the non-interacting
+case. And these modifications are directly related to the 
+interaction properties of the two particles. For three particles the
+principle is similar, but the investigation of the corresponding two
+particle system is required as a prerequisite. Here the additional
+challenge is to disentangle those small modifications from the
+background. 
+
+Scientists of the Rheinische Friedrich-Wilhelms-Universität Bonn
+together with collaborators from the Extended Twisted Mass
+Collaboration (ETMC) have been able to investigate various two-meson,
+meson-baryon and three-meson systems. In particular, pion-pion,
+pion-kaon and kaon-kaon systems could be studied with focus also a
+careful evaluation of the relevant uncertainties, leading also to a
+number of important publications. As one of the highlights, the
+resources available through the supercomputer centre in Jülich made it
+possible to study two- and three-pion systems at physical pion mass
+value (dubbed the physical point).
+
+Since this was a longer running compute project, the JSC supercomputing
+resources used for reaching this result are JUQUEEN, JURECA and
+JUWELS, including also JUWELS booster. The scientists had to develop
+highly optimised software to make optimal use of these precious
+resources. The generated data can be used for other projects, too, and
+is still being anlysed.
+
+In the figure results for the isospin-2 pion scattering
+length a<sub>0</sub> multiplied with the mass of the pion
+M<sub>&pi;</sub> as a function of the mass of the pion divided by its
+decay constant f<sub>&pi;</sub> obtained in 2015 with the latest
+results obtained in 2021 are comparede. The latest results [1] (orange
+triangles) make the long extrapolation to the physical point using
+chiral perturbation theory (ChPT, dashed line) superfluous, which was
+still mandatory in 2015 [2]. The 2021 result is also fully compatible
+with experimental results.
+
+This result represents on the one hand a significant technical
+advancement as it proves the feasibility of the investigation of three
+hadron systems at the physical point, therefore allowing for a direct
+comparison with experimental results. On the other hand the result
+further fosters our confidence in QCD as a powerful theory to describe
+the strong interactions in nature.
+
+figure caption: The isospin-2 pion scattering length
+a<sub>0</sub> multiplied with the mass of the pion M<sub>&pi;</sub> as
+a function of the mass of the pion divided by its decay constant
+f<sub>&pi;</sub> is shown, comparing results from [1] and [2], both
+obtained within this compute project. The dashed line respresent the 
+extrapolation of the results from [2] using chiral perturbation theory.
+
+[1] M. Fischer et al. (ETMC), Eur.Phys.J.C 81 (2021) 5, 436
+[2] C. Helmes et al. (ETMC), JHEP 09 (2015) 109
