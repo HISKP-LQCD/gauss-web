@@ -106,12 +106,17 @@ JUWELS, including also JUWELS Booster. The scientists had to develop
 highly optimised software to make optimal use of these precious
 resources.
 
-First and foremost, this involved adapting and making use [3] of the
+First and foremost, this involved adapting and making use of the
 GPU-accelerated QUDA lattice QCD library and its highly efficient
-solvers leading to reductions in computing time requirements by orders
-of magnitude at the physical point.
-Second, for a certain part of the calculations, a hybrid code was developed 
-which employs both the CPUs and GPUs of Juwels Booster simultaneously, 
+solvers, leading to reductions in computing time requirements by orders
+of magnitude at the physical point. This adaptation has now progressed
+to the point where also the generation of so-called ensembles of gauge
+configurations can be carried out on GPU-accelerated machines [3] using the
+type of discretisation employed by the ETMC. These configurations are the 
+basis for the evaluation of the above-mentioned path integral and thus
+the starting point for any calculation in lattice QCD.
+Second, for a certain part of the calculations in this project, a hybrid code
+was developed which employs both the CPUs and GPUs of Juwels Booster simultaneously, 
 making use of both resources in the most efficient way possible.
 To this end, a part of the computation requiring a lot of memory is carried out
 on the CPU, interleaved with another part of the computation running on the GPU
@@ -119,9 +124,12 @@ which in turn generates the data required by the next step running on the CPU.
 This interleaving results in essentially 100% GPU utilisation at the
 parallelisation point where the underlying algorithms are most efficient.
 Third, the factorial growth of complexity described above was 
-tackled through the factorisation and task-based parallelisation of the
-resulting expressions as well as the usage of symmetries and the caching 
-of common subexpressions wherever possible.
+tackled through the factorisation of the resulting expressions and
+the application of symmetries and the caching of of common sub-expressions 
+to reduce the number of calculations as much as possible.
+The remaining expressions, many of which do not scale
+well under parallelisation, were then evaluated using a task-based scheme which
+allowed all CPU cores to be used by parallelising over independent expressions.
 The generated data can be used for other projects, too, and is still being anlysed.
 
 In the figure results for the isospin-2 pion scattering
