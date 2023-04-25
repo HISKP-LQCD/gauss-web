@@ -46,13 +46,13 @@ Abstact:
 It has been a long-standing dream in nuclear physics to study nuclei like,
 for instance, carbon directly from Quantum Chromodynamics (QCD), the
 underlying fundamental theory of strong interactions. Such an endeavor
-is very challenging both, methodically and numerically. Towards this
-goal physicists from the European Twisted Mass Collaboration and in
+is very challenging both methodically and numerically. Towards this
+goal, physicists from the European Twisted Mass Collaboration and in
 particular the University of Bonn have investigated two- and
 three-hadron systems using the approach of Lattice QCD.
 
 Report:
-It is a long lasting dream in nuclear physics to study nuclei like,
+It has been a long-standing dream in nuclear physics to study nuclei like,
 for instance, carbon directly from Quantum Chromodynamics (QCD), the
 underlying fundamental theory of strong interactions. Such a
 theoretical investigation from first principles is difficult for
@@ -62,8 +62,9 @@ By contrast, in lattice QCD the problem can be treated from
 first principles non-perturbatively.
 To do so, space-time is discretised in a regular lattice and
 the interactions of the underlying degrees of freedom, quarks
-and gluons, are determined by numerical simulations of the 
-so-called path integral. 
+and gluons, are studied by numerical simulations of the 
+so-called path integral, a technique which takes into account
+all possible quantum fluctuations.
 Second, while nuclei can be described reasonably well as bound states of
 protons and neutrons, these themselves consist of three quarks each.
 The computational complexity in lattice QCD is proportional to the
@@ -92,7 +93,7 @@ Scientists of the Rheinische Friedrich-Wilhelms-Universität Bonn
 together with collaborators from the Extended Twisted Mass
 Collaboration (ETMC) have been able to investigate various two-meson,
 meson-baryon and three-meson systems. In particular, pion-pion,
-pion-kaon and kaon-kaon systems could be studied with focus also a
+pion-kaon and kaon-kaon systems could be studied with a focus on a
 careful evaluation of the relevant uncertainties, leading also to a
 number of important publications. As one of the highlights, the
 resources available at Jülich Supercomputer Centre made it
@@ -103,13 +104,24 @@ Since this was a longer running compute project, the JSC supercomputing
 resources used for reaching this result are JUQUEEN, JURECA and
 JUWELS, including also JUWELS Booster. The scientists had to develop
 highly optimised software to make optimal use of these precious
-resources. On the one hand, this involved adapting and making use of the
+resources.
+
+First and foremost, this involved adapting and making use [3] of the
 GPU-accelerated QUDA lattice QCD library and its highly efficient
-solvers [3] leading to reductions in computing time requirements by orders
-of magnitude at the physical point. On the other hand, the factorial growth 
-of complexity described above was tackled through the factorisation and 
-task-based parallelisation of the resulting expressions as well as the usage 
-symmetries and the caching of common subexpressions wherever possible.
+solvers leading to reductions in computing time requirements by orders
+of magnitude at the physical point.
+Second, for a certain part of the calculations, a hybrid code was developed 
+which employs both the CPUs and GPUs of Juwels Booster simultaneously, 
+making use of both resources in the most efficient way possible.
+To this end, a part of the computation requiring a lot of memory is carried out
+on the CPU, interleaved with another part of the computation running on the GPU
+which in turn generates the data required by the next step running on the CPU.
+This interleaving results in essentially 100% GPU utilisation at the
+parallelisation point where the underlying algorithms are most efficient.
+Third, the factorial growth of complexity described above was 
+tackled through the factorisation and task-based parallelisation of the
+resulting expressions as well as the usage of symmetries and the caching 
+of common subexpressions wherever possible.
 The generated data can be used for other projects, too, and is still being anlysed.
 
 In the figure results for the isospin-2 pion scattering
@@ -138,4 +150,4 @@ extrapolation of the results from [2] using chiral perturbation theory.
 
 [1] M. Fischer et al. (ETMC), Eur.Phys.J.C 81 (2021) 5, 436
 [2] C. Helmes et al. (ETMC), JHEP 09 (2015) 109
-[3] Clark, M.A., et al., SC'16
+[3] B. Kostrzewa et al., PoS(LATTICE2022)340
